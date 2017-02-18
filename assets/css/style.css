@@ -107,11 +107,11 @@ p{
   @include corners(5px);
   border: solid 2px #fff;
     
-    &:hover{
-      background:#78e3de;
-      border: solid 1px #fff;
-      color:#fff;
-    }
+  &:hover{
+    background:#78e3de;
+    border: solid 1px #fff;
+    color:#fff;
+  }
 }
 
 #my-word {
@@ -135,7 +135,7 @@ p{
 }
 
 .active {
-  @include opacity;
+  opacity: 0.4;
   cursor:default;
     
   &:hover{
@@ -148,6 +148,10 @@ p{
   font-size:1.6em;
   text-align:center;
   display:block;
+}
+
+#categoryName {
+  margin-top: 100px;
 }
 
 button{
@@ -173,13 +177,24 @@ button:hover{
 }
 
 @media (max-width: 767px) {
-  #alphabet {
-  padding:0 0 0 15px;
+    #alphabet {
+    padding:0 0 0 15px;
+  }
+    #categoryName {
+      margin-top: 35px;
+  }
 }
+
+@media (max-width: 480px) {
+    #alphabet {
+    padding:0 0 0 25px;
+  }
+    #categoryName {
+      margin-top: 30px;
+      margin-bottom: 30px;
   }
 
-  @media (max-width: 480px) {
-  #alphabet {
-  padding:0 0 0 25px;
+
+
+
 }
-  }

@@ -22,17 +22,16 @@ window.onload = function () {
   var getHint = document.getElementById("hint");
   var showClue = document.getElementById("clue");
 
-  hints = [
-        ["A Scientist", "Has the power to turn into a giant", "Has a pronounced stutter", "Attach to their phone", "Girlfriend is a double agent", "It is a King", "Was an alien parasite"],
-        ["Keep asking about their purpose", "Its a live slug-like alien", "It illegal to obtain", "Fires a potent red energy bolt", "Its a weapon", "It have a Music System with speakers", "Had to be turned on to work properly"]
-  ];
-
   categories = [
         ["rick", "squanchy", "morty", "summer", "birdperson", "king jellybean", "pencilveste"],
         ["butter robot", "chris", "time crystal", "laser gun", "freeze ray", "combat suit", "grappling shoes"]
   ];
 
-
+ hints = [
+        ["A Scientist", "Has the power to turn into a giant", "Has a pronounced stutter", "Attach to their phone", "Girlfriend is a double agent", "It is a King", "Was an alien parasite"],
+        ["Keep asking about their purpose", "Its a live slug-like alien", "It illegal to obtain", "Fires a potent red energy bolt", "Its a weapon", "It have a Music System with speakers", "Had to be turned on to work properly"]
+  ];
+  
   // create alphabet ul
   var buttons = function () {
     myButtons = document.getElementById('buttons');
@@ -113,7 +112,6 @@ window.onload = function () {
       if (j === -1) {
         lives -= 1;
         comments();
-        animate();
       } else {
         comments();
       }
