@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>JavaScript Hangman Game</title>
+	<title>Rick and Morty Hangman</title>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="assets/css/reset.css" rel="stylesheet" type="text/css">
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 <body>
@@ -11,16 +14,17 @@
     <p>Use the alphabet below to guess the word, or click hint to get a clue. </p>
 </div>
 <div class="wrapper">
+    <audio autoplay="autoplay" src="assets/sounds/Theme_Song.mp3"></audio>
+    <br>
     <div id="buttons">
     </div>  
     <br>
     <p id="categoryName"></p>
     <div id="hold">
     </div>
+    <br>
     <p id="mylives"></p>
-    <br>
     <p id="win-counter"></p>
-    <br>
     <p id="clue">Clue -</p>  
     <div class="container">
       <button id="hint">Hint</button>

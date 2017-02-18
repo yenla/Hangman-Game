@@ -31,7 +31,7 @@ window.onload = function () {
         ["A Scientist", "Has the power to turn into a giant", "Has a pronounced stutter", "Attach to their phone", "Girlfriend is a double agent", "It is a King", "Was an alien parasite"],
         ["Keep asking about their purpose", "Its a live slug-like alien", "It illegal to obtain", "Fires a potent red energy bolt", "Its a weapon", "It have a Music System with speakers", "Had to be turned on to work properly"]
   ];
-  
+
   // create alphabet ul
   var buttons = function () {
     myButtons = document.getElementById('buttons');
@@ -156,7 +156,8 @@ window.onload = function () {
     letters.parentNode.removeChild(letters);
     showClue.innerHTML = "";
     context.clearRect(0, 0, 400, 400);
-    play();
+    // play();
+    window.location.reload();
   }
 }
 
